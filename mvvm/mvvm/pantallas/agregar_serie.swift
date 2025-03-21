@@ -22,12 +22,28 @@ struct AgregarSerie: View {
     @State var mostrar_agregar_plataformas: Bool = false
     
     var body: some View {
-        Text("Hola mundo!")
-        TextField("Nombre de la serie", text: $nombre_de_la_serie)
+        Text("Agrega una serie")
+            .padding()
+            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+        
+        ZStack{
+            TextField("Nombre de la serie", text: $nombre_de_la_serie).padding(.leading)
+                .frame(height: 55)
+                .background(Color.gray,in:RoundedRectangle(cornerRadius: 14).stroke(lineWidth: 2))
+        }
+        .padding(.horizontal)
+        
         if indicar_problemas{
             Text("Hay un problema con tu serie, no tiene nombre")
         }
-        TextField("Tipo", text: $tipo_de_la_serie)
+        
+        ZStack{
+            TextField("Tipo", text: $tipo_de_la_serie).padding(.leading)
+                .frame(height: 55)
+                .background(Color.gray,in:RoundedRectangle(cornerRadius: 14).stroke(lineWidth: 2))
+        }
+        .padding(.horizontal)
+        
         
         Spacer()
         Text("Plataformas")
@@ -39,10 +55,24 @@ struct AgregarSerie: View {
                 }
             }
         }.sheet(isPresented: $mostrar_agregar_plataformas){
-            Text("por favor agrega una plataforma")
+            Text("Agrega una plataforma")
+                .padding()
+                .font(.title3)
+            ZStack{
+                TextField("Nombre de la plataforma", text: $nombre_plataforma).padding(.leading)
+                    .frame(height: 55)
+                    .background(Color.gray,in:RoundedRectangle(cornerRadius: 14).stroke(lineWidth: 2))
+            }
+            .padding(.horizontal)
             
-            TextField("Nombre de la plataforma", text: $nombre_plataforma)
-            TextField("Indica la imagen", text: $imagen_plataforma)
+            ZStack{
+                TextField("Indica la imagen", text: $imagen_plataforma).padding(.leading)
+                    .frame(height: 55)
+                    .background(Color.gray,in:RoundedRectangle(cornerRadius: 14).stroke(lineWidth: 2))
+            }
+            .padding(.horizontal)
+            
+            
             
             ScrollView(){
                 VStack{
@@ -66,14 +96,14 @@ struct AgregarSerie: View {
                 }
             }
         }
-
         Spacer()
+
         
         Button("Agregar Plataforma"){
             mostrar_agregar_plataformas = true
         }
+        .padding()
         
-        Spacer()
         
         Button("Agregar serie"){
             print("Agregando serie")
@@ -82,6 +112,7 @@ struct AgregarSerie: View {
             
             indicar_problemas = !controlador.agregar_serie(serie: serie_nueva)
         }
+        .padding()
         Spacer()
     }
 }
