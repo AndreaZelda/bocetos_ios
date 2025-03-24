@@ -21,7 +21,7 @@ struct MenuPrincipalSeries: View {
         }
         Spacer()
         
-        Button("Agrega por favor una serie de prueba"){
+        Button("Agrega una serie"){
             controlador.cambiar_a_agregar_serie()
         }
     }
