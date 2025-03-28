@@ -16,19 +16,21 @@ struct PublicacionVista: View {
     //var publicacion_a_mostrar = controlador.publicacion_seleccionada
     
     var body: some View {
-        Text("\(controlador.publicacion_seleccionada?.title)")
-        Text("\(controlador.publicacion_seleccionada?.body)")
+        Text("\(controlador.publicacion_seleccionada?.title ?? "Titulito")")
+        Text("\(controlador.publicacion_seleccionada?.body ?? "Texitito")")
         
         NavigationLink{
-            Text("Hola mundo")
+            PerfilBasicoVista()
         } label : {
             Text("Ver perfil")
-        }
+        }.simultaneousGesture(TapGesture().onEnded({
+            controlador.ver_perfil(id: controlador.publicacion_seleccionada!.userId)
+        }))
         
         ScrollView{
             VStack{
                 ForEach(controlador.comentarios){ comentario in
-                    Text("Usuario: \(comentario.name)")
+                    Text("Usuario: \(comentario.name) ")
                     Text("\(comentario.body)")
                 }
             }

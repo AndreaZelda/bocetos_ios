@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB0C77002D9700F90022B272 /* perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C76FF2D9700F90022B272 /* perfil.swift */; };
+		FB0C77032D9704600022B272 /* perfil_vista_basica.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C77022D9704600022B272 /* perfil_vista_basica.swift */; };
 		FB392BBB2D91B0F900864327 /* RedesSocialesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB392BBA2D91B0F900864327 /* RedesSocialesApp.swift */; };
 		FB392BBD2D91B0F900864327 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB392BBC2D91B0F900864327 /* ContentView.swift */; };
 		FB392BBF2D91B0F900864327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB392BBE2D91B0F900864327 /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB0C76FF2D9700F90022B272 /* perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perfil.swift; sourceTree = "<group>"; };
+		FB0C77022D9704600022B272 /* perfil_vista_basica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perfil_vista_basica.swift; sourceTree = "<group>"; };
 		FB392BB72D91B0F900864327 /* RedesSociales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedesSociales.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB392BBA2D91B0F900864327 /* RedesSocialesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedesSocialesApp.swift; sourceTree = "<group>"; };
 		FB392BBC2D91B0F900864327 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB0C77012D97044B0022B272 /* perfil_basico */ = {
+			isa = PBXGroup;
+			children = (
+				FB0C77022D9704600022B272 /* perfil_vista_basica.swift */,
+			);
+			path = perfil_basico;
+			sourceTree = "<group>";
+		};
 		FB392BAE2D91B0F900864327 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +104,7 @@
 			children = (
 				FB392BCC2D91B26900864327 /* Publicacion.swift */,
 				FB4B97AE2D946332007D5E9E /* comentario.swift */,
+				FB0C76FF2D9700F90022B272 /* perfil.swift */,
 			);
 			path = modelos;
 			sourceTree = "<group>";
@@ -117,6 +130,7 @@
 		FB392BD42D91BDEE00864327 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				FB0C77012D97044B0022B272 /* perfil_basico */,
 				FB392BD52D91BDF800864327 /* publicaciones */,
 			);
 			path = ui;
@@ -203,7 +217,9 @@
 			files = (
 				FB392BD72D91BE1600864327 /* publicaciones_general.swift in Sources */,
 				FB392BCF2D91B4A200864327 /* placeholder_api.swift in Sources */,
+				FB0C77032D9704600022B272 /* perfil_vista_basica.swift in Sources */,
 				FB392BCD2D91B26900864327 /* Publicacion.swift in Sources */,
+				FB0C77002D9700F90022B272 /* perfil.swift in Sources */,
 				FB392BBD2D91B0F900864327 /* ContentView.swift in Sources */,
 				FB4B97AF2D946332007D5E9E /* comentario.swift in Sources */,
 				FB4B97AD2D945E8C007D5E9E /* publicacion.swift in Sources */,

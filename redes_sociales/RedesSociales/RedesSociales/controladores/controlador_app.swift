@@ -15,6 +15,7 @@ public class ControladorAplicacion{
     var comentarios: Array<Comentario> = []
     
     var publicacion_seleccionada: Publicacion? = nil
+    var perfil_a_mostrar: Perfil? = nil
     
     init(){
         Task.detached(priority: .high){
@@ -48,5 +49,16 @@ public class ControladorAplicacion{
         Task.detached(operation: {
             await self.descargar_comentarios()
         })
+    }
+    
+    func descargar_perfil(id: Int) async -> Void {
+        guard let perfil: Perfil = try? await PlaceHolderApi().descargar_perfil(id: id) else {return}
+        perfil_a_mostrar = perfil
+    }
+    
+    func ver_perfil(id: Int) -> Void{
+        Task.detached{
+            await self.descargar_perfil(id: id)
+        }
     }
 }
