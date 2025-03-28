@@ -13,22 +13,29 @@ struct GeneralPublicaciones: View {
     //@StateObject var controlador = ControladorPublicaciones()
     @Environment(ControladorAplicacion.self) var controlador
     var body: some View {
-        ScrollView{
-            VStack{
-                ForEach(controlador.publicaciones){ publicacion in
-                    NavigationLink {
-                        Text("Hola mundo")
-                    } label : {
-                        HStack {
-                            Text("\(publicacion.id)")
-                            VStack{
+        NavigationStack{
+            ScrollView{
+                VStack{
+                    ForEach(controlador.publicaciones){ publicacion in
+                        NavigationLink {
+                            PublicacionVista()
+                        } label : {
+                            VStack {
+                                HStack{
+                                    Text("\(publicacion.id)")
+                                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                                }
                                 Text("\(publicacion.title)")
                                 Text("\(publicacion.body)")
+                                
                             }
-                        }.onTapGesture {
-                            //controlador.mostrar_publicacion(publicacion.id)
-                            print("Usted ha seleccionado: \(publicacion.id)")
+                            .clipShape(Rectangle())
+                            .padding()
+                            
                         }
+                        .simultaneousGesture(TapGesture().onEnded({
+                            controlador.seleccionar_publicacion(publicacion)
+                        }))
                     }
                 }
             }

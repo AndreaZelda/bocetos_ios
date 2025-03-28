@@ -9,8 +9,8 @@ import Foundation
 
 import SwiftUI
 
-class PlaceHolderApi{
-    let url_de_servicio = "https://jsonplaceholder.typicode.com"
+class PlaceHolderApi: Codable{
+    let url_de_servicio = "https://jsonplaceholder.typicode.com" //URL de la ubicacion o fuente de todos los demas recursos
     
     func descargar_publicaciones() async -> [Publicacion]? {
         let ubicacion_recurso = "/posts"
