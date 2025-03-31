@@ -16,8 +16,21 @@ struct PublicacionVista: View {
     //var publicacion_a_mostrar = controlador.publicacion_seleccionada
     
     var body: some View {
-        Text("\(controlador.publicacion_seleccionada?.title ?? "Titulito")")
-        Text("\(controlador.publicacion_seleccionada?.body ?? "Texitito")")
+        HStack{
+            Text("\(controlador.publicacion_seleccionada?.title ?? "Titulito")")
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .padding(.leading)
+                .bold()
+            Spacer()
+        }
+        
+        HStack{
+            Text("\(controlador.publicacion_seleccionada?.body ?? "Texitito")")
+                .padding(.leading)
+            Spacer()
+        }
+        
+        
         
         NavigationLink{
             PerfilBasicoVista()

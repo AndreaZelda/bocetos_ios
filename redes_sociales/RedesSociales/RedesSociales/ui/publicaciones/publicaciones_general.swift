@@ -15,6 +15,13 @@ struct GeneralPublicaciones: View {
     var body: some View {
         NavigationStack{
             ScrollView{
+                HStack{
+                    Text("Publicaciones")
+                        .font(.largeTitle)
+                        .bold()
+                        .padding(30)
+                    Spacer()
+                }
                 VStack{
                     ForEach(controlador.publicaciones){ publicacion in
                         NavigationLink {
@@ -23,13 +30,31 @@ struct GeneralPublicaciones: View {
                             VStack {
                                 HStack{
                                     Text("\(publicacion.id)")
-                                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                                        .font(.headline)
+                                        .bold()
+                                        .padding(.leading)
+                                    Spacer()
                                 }
-                                Text("\(publicacion.title)")
-                                Text("\(publicacion.body)")
+                                .padding(.top)
+                                HStack{
+                                    Text("\(publicacion.title)")
+                                        .font(.title2)
+                                        .bold()
+                                        .padding(.leading)
+                                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                                    Spacer()
+                                }
+                                HStack{
+                                    Text("\(publicacion.body)")
+                                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                                        .padding(.leading)
+                                }
+                                .padding(.bottom)
                                 
                             }
-                            .clipShape(Rectangle())
+                            .clipShape(RoundedRectangle(cornerRadius: 14))
+                            .background(Color.gray,in:RoundedRectangle(cornerRadius: 14))
+                            .foregroundColor(.white)
                             .padding()
                             
                         }
