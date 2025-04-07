@@ -27,7 +27,7 @@
 		FB76F87B2DA421C800FF7D43 /* pagina_resultados.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB76F87A2DA421C800FF7D43 /* pagina_resultados.swift */; };
 		FB76F87D2DA4237A00FF7D43 /* dragonball_api.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB76F87C2DA4237A00FF7D43 /* dragonball_api.swift */; };
 		FB76F8802DA4263500FF7D43 /* PantallaPersonajes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB76F87F2DA4263500FF7D43 /* PantallaPersonajes.swift */; };
-		FB76F8822DA4291700FF7D43 /* infoPersonaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB76F8812DA4291700FF7D43 /* infoPersonaje.swift */; };
+		FB76F8842DA4378F00FF7D43 /* personaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB76F8832DA4378F00FF7D43 /* personaje.swift */; };
 		FB9F79E22D9AEC7F008D08DF /* menu_aplicacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9F79E12D9AEC7F008D08DF /* menu_aplicacion.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +53,7 @@
 		FB76F87A2DA421C800FF7D43 /* pagina_resultados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pagina_resultados.swift; sourceTree = "<group>"; };
 		FB76F87C2DA4237A00FF7D43 /* dragonball_api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dragonball_api.swift; sourceTree = "<group>"; };
 		FB76F87F2DA4263500FF7D43 /* PantallaPersonajes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaPersonajes.swift; sourceTree = "<group>"; };
-		FB76F8812DA4291700FF7D43 /* infoPersonaje.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoPersonaje.swift; sourceTree = "<group>"; };
+		FB76F8832DA4378F00FF7D43 /* personaje.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personaje.swift; sourceTree = "<group>"; };
 		FB9F79E12D9AEC7F008D08DF /* menu_aplicacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menu_aplicacion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,7 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				FB76F87F2DA4263500FF7D43 /* PantallaPersonajes.swift */,
-				FB76F8812DA4291700FF7D43 /* infoPersonaje.swift */,
+				FB76F8832DA4378F00FF7D43 /* personaje.swift */,
 			);
 			path = dragon_ball;
 			sourceTree = "<group>";
@@ -284,12 +284,12 @@
 				FB4B97AD2D945E8C007D5E9E /* publicacion.swift in Sources */,
 				FB392BD32D91BC4100864327 /* controlador_publicaciones.swift in Sources */,
 				FB392BBB2D91B0F900864327 /* RedesSocialesApp.swift in Sources */,
-				FB76F8822DA4291700FF7D43 /* infoPersonaje.swift in Sources */,
 				FB76F8762DA421A500FF7D43 /* planeta.swift in Sources */,
 				FB392BD12D91B4AA00864327 /* errores.swift in Sources */,
 				FB4B97AB2D94535F007D5E9E /* controlador_app.swift in Sources */,
 				FB76F87D2DA4237A00FF7D43 /* dragonball_api.swift in Sources */,
 				FB76F8802DA4263500FF7D43 /* PantallaPersonajes.swift in Sources */,
+				FB76F8842DA4378F00FF7D43 /* personaje.swift in Sources */,
 				FB76F8782DA421AF00FF7D43 /* transformaciones.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
