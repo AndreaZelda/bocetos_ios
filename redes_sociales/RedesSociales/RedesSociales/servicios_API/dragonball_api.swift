@@ -17,6 +17,12 @@ class DragonBallAPI: Codable{
         return await descargar(recurso: ubicacion_recurso)
     }
     
+    func descargar_informacion_personaje(id: Int) async -> MonoChino?{
+        let ubicacion_recurso = "/characters/\(id)"
+        
+        return await descargar(recurso: ubicacion_recurso)
+    }
+    
     private func descargar<TipoGenerico: Codable>(recurso: String) async  -> TipoGenerico? {
           do {
               guard let url = URL(string: "\(url_base)\(recurso)") else { throw ErroresDeRed.badUrl }

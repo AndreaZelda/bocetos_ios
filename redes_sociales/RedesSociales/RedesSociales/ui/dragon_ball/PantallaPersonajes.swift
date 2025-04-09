@@ -50,6 +50,9 @@ struct PantallaPersonajes: View{
                                         //.background(Color.orange)
                                 }
                             }
+                            .simultaneousGesture(TapGesture().onEnded({
+                                controlador.descargar_informacion_personaje(id: personaje.id)
+                            }))
                         }
                         .clipShape(RoundedRectangle(cornerRadius: 14))
                         .background(Color.blue,in:RoundedRectangle(cornerRadius: 14))
@@ -57,10 +60,6 @@ struct PantallaPersonajes: View{
                         .padding()
                             
                     }
-                    .simultaneousGesture(TapGesture().onEnded({
-                        controlador.seleccionar_personaje(personaje)
-                    }))
-                     
                 }
             }
         }

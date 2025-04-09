@@ -12,5 +12,5 @@ struct Planeta: Identifiable, Codable{
     let name: String
     let isDestroyed: Bool
     let description: String
-    let imagen: String
+    let image: String
 }
