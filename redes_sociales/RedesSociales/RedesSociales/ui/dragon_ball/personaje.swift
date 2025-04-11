@@ -23,6 +23,7 @@ struct PersonajeVista: View {
                 Text("\(controlador.personaje?.name ?? "Nombrecito")")
                     .font(.largeTitle)
                     .bold()
+                    .padding()
             }
             HStack{
                 if let url = URL(string: controlador.personaje?.image ?? "Imagencita"){
@@ -35,17 +36,29 @@ struct PersonajeVista: View {
                 }
             }
             Text("Planeta de origen: \(controlador.personaje?.originPlanet?.name ?? "Planetita")")
+                .padding(.horizontal)
             HStack{
                 Text("Ki: \(controlador.personaje?.ki ?? "0")")
-                    .padding(.horizontal)
                 Text("MaxKi: \(controlador.personaje?.maxKi ?? "0")")
             }
             
+            
             Text("Raza: \(controlador.personaje?.race ?? "Razita")")
+                .padding(.horizontal)
             Text("Género: \(controlador.personaje?.gender ?? "Generito")")
-            Text("\(controlador.personaje?.description ?? "Descripcioncita")")
+                .padding(.horizontal)
             Text("Afiliacion: \(controlador.personaje?.affiliation ?? "Afiliacioncita")")
+                .padding(.horizontal)
+            
+            HStack{
+                Spacer()
+                Text("\(controlador.personaje?.description ?? "Descripcioncita")")
+                    .padding()
+                Spacer()
+            }
         }
+        .background(Color.yellow)
+
     }
 }
 
