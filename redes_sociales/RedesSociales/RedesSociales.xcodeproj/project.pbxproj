@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FB0C77002D9700F90022B272 /* perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C76FF2D9700F90022B272 /* perfil.swift */; };
 		FB0C77032D9704600022B272 /* perfil_vista_basica.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C77022D9704600022B272 /* perfil_vista_basica.swift */; };
+		FB2344C32DBFE354004385A9 /* planetapersonaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2344C22DBFE354004385A9 /* planetapersonaje.swift */; };
 		FB392BBB2D91B0F900864327 /* RedesSocialesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB392BBA2D91B0F900864327 /* RedesSocialesApp.swift */; };
 		FB392BBD2D91B0F900864327 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB392BBC2D91B0F900864327 /* ContentView.swift */; };
 		FB392BBF2D91B0F900864327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB392BBE2D91B0F900864327 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		FB0C76FF2D9700F90022B272 /* perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perfil.swift; sourceTree = "<group>"; };
 		FB0C77022D9704600022B272 /* perfil_vista_basica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perfil_vista_basica.swift; sourceTree = "<group>"; };
+		FB2344C22DBFE354004385A9 /* planetapersonaje.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planetapersonaje.swift; sourceTree = "<group>"; };
 		FB392BB72D91B0F900864327 /* RedesSociales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedesSociales.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB392BBA2D91B0F900864327 /* RedesSocialesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedesSocialesApp.swift; sourceTree = "<group>"; };
 		FB392BBC2D91B0F900864327 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				FB76F87F2DA4263500FF7D43 /* PantallaPersonajes.swift */,
 				FB76F8832DA4378F00FF7D43 /* personaje.swift */,
 				FB3B7DEB2DA96AF400E5B73A /* transformacion.swift */,
+				FB2344C22DBFE354004385A9 /* planetapersonaje.swift */,
 			);
 			path = dragon_ball;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				FB76F8762DA421A500FF7D43 /* planeta.swift in Sources */,
 				FB392BD12D91B4AA00864327 /* errores.swift in Sources */,
 				FB4B97AB2D94535F007D5E9E /* controlador_app.swift in Sources */,
+				FB2344C32DBFE354004385A9 /* planetapersonaje.swift in Sources */,
 				FB76F87D2DA4237A00FF7D43 /* dragonball_api.swift in Sources */,
 				FB76F8802DA4263500FF7D43 /* PantallaPersonajes.swift in Sources */,
 				FB76F8842DA4378F00FF7D43 /* personaje.swift in Sources */,

@@ -22,6 +22,11 @@ public class ControladorAplicacion{
     var personaje: MonoChino? = nil
     var personajes_seleccionado: MonoChino? = nil
     
+    //Seccion Planetas
+    var pagina_resultados_planeta: PaginaResultadoPlaneta? = nil
+    var planetaNom: Planeta? = nil
+    var planeta_seleccionado: Planeta? = nil
+    
     init(){
         Task.detached(priority: .high){
             await self.descargar_publicaciones()
@@ -52,6 +57,14 @@ public class ControladorAplicacion{
         })
     }
     
+    //PLANETAAAAS
+    func descargar_planetas() async{
+        guard let pagina_descargada: PaginaResultadoPlaneta = try? await DragonBallAPI().descargar_pagina_planetas() else {return}
+        
+        self.pagina_resultados_planeta = pagina_descargada
+    }
+    //PENDIENTE!!
+
     func descargar_publicaciones() async {
         defer {
             print("Esta funcion se mando a llamar despues de todos los awaits en mi funcion \(#function)")
