@@ -24,10 +24,11 @@ struct PlanetaVista: View {
                     Spacer()
                     Spacer()
                     HStack{
-                        Text("\(controlador.personaje?.originPlanet?.name ?? "Planetita")")
+                        Text("Planeta \(controlador.personaje?.originPlanet?.name ?? "Planetita")")
                             .font(.largeTitle)
                             .bold()
                             .padding()
+                            .foregroundColor(.white)
                     }
                     
                     HStack{
@@ -37,12 +38,18 @@ struct PlanetaVista: View {
                                     .resizable()
                                     .scaledToFit()
                             }
-                            .frame(width: 150, height: 200)
                         }
                     }
                     
-                    Text("¿Esta destruido? \(controlador.personaje?.originPlanet?.isDestroyed ?? false)")
-                        .padding(.horizontal)
+                    HStack{
+                        Text("¿Esta destruido? \(controlador.personaje?.originPlanet?.isDestroyed ?? false)")
+                            .padding(.horizontal)
+                    }
+                    .padding()
+                    .clipShape(RoundedRectangle(cornerRadius: 18))
+                    .background(Color.blue,in:RoundedRectangle(cornerRadius: 18))
+                    .foregroundColor(.white)
+                    
                     
                     HStack{
                         Spacer()
@@ -50,9 +57,13 @@ struct PlanetaVista: View {
                             .padding()
                         Spacer()
                     }
-                    
+                    .clipShape(RoundedRectangle(cornerRadius: 18))
+                    .background(Color.blue,in:RoundedRectangle(cornerRadius: 18))
+                    .foregroundColor(.white)
+                    .padding()
                 }
             }
+            .background(Color.indigo)
         }
     }
 }
