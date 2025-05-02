@@ -30,7 +30,7 @@ class DragonBallAPI: Codable{
         return await descargar(recurso: ubicacion_recurso)
     }
     
-    func descargar_informacion_planeta(id: Int) async -> MonoChino? {
+    func descargar_informacion_planeta(id: Int) async -> Planeta? {
         let ubicacion_recurso = "/planets/\(id)"
         
         return await descargar(recurso: ubicacion_recurso)

@@ -10,6 +10,9 @@
 		FB0C77002D9700F90022B272 /* perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C76FF2D9700F90022B272 /* perfil.swift */; };
 		FB0C77032D9704600022B272 /* perfil_vista_basica.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C77022D9704600022B272 /* perfil_vista_basica.swift */; };
 		FB2344C32DBFE354004385A9 /* planetapersonaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2344C22DBFE354004385A9 /* planetapersonaje.swift */; };
+		FB39299C2DC51C6600A0E580 /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39299B2DC51C6600A0E580 /* home.swift */; };
+		FB39299E2DC51ED400A0E580 /* planetasGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39299D2DC51ED400A0E580 /* planetasGeneral.swift */; };
+		FB3929A32DC52D8000A0E580 /* planetaMostrar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3929A22DC52D8000A0E580 /* planetaMostrar.swift */; };
 		FB392BBB2D91B0F900864327 /* RedesSocialesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB392BBA2D91B0F900864327 /* RedesSocialesApp.swift */; };
 		FB392BBD2D91B0F900864327 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB392BBC2D91B0F900864327 /* ContentView.swift */; };
 		FB392BBF2D91B0F900864327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB392BBE2D91B0F900864327 /* Assets.xcassets */; };
@@ -37,6 +40,9 @@
 		FB0C76FF2D9700F90022B272 /* perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perfil.swift; sourceTree = "<group>"; };
 		FB0C77022D9704600022B272 /* perfil_vista_basica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perfil_vista_basica.swift; sourceTree = "<group>"; };
 		FB2344C22DBFE354004385A9 /* planetapersonaje.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planetapersonaje.swift; sourceTree = "<group>"; };
+		FB39299B2DC51C6600A0E580 /* home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
+		FB39299D2DC51ED400A0E580 /* planetasGeneral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planetasGeneral.swift; sourceTree = "<group>"; };
+		FB3929A22DC52D8000A0E580 /* planetaMostrar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planetaMostrar.swift; sourceTree = "<group>"; };
 		FB392BB72D91B0F900864327 /* RedesSociales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedesSociales.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB392BBA2D91B0F900864327 /* RedesSocialesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedesSocialesApp.swift; sourceTree = "<group>"; };
 		FB392BBC2D91B0F900864327 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -195,6 +201,9 @@
 				FB76F8832DA4378F00FF7D43 /* personaje.swift */,
 				FB3B7DEB2DA96AF400E5B73A /* transformacion.swift */,
 				FB2344C22DBFE354004385A9 /* planetapersonaje.swift */,
+				FB39299B2DC51C6600A0E580 /* home.swift */,
+				FB39299D2DC51ED400A0E580 /* planetasGeneral.swift */,
+				FB3929A22DC52D8000A0E580 /* planetaMostrar.swift */,
 			);
 			path = dragon_ball;
 			sourceTree = "<group>";
@@ -282,8 +291,10 @@
 				FB392BCF2D91B4A200864327 /* placeholder_api.swift in Sources */,
 				FB0C77032D9704600022B272 /* perfil_vista_basica.swift in Sources */,
 				FB392BCD2D91B26900864327 /* Publicacion.swift in Sources */,
+				FB39299C2DC51C6600A0E580 /* home.swift in Sources */,
 				FB0C77002D9700F90022B272 /* perfil.swift in Sources */,
 				FB392BBD2D91B0F900864327 /* ContentView.swift in Sources */,
+				FB3929A32DC52D8000A0E580 /* planetaMostrar.swift in Sources */,
 				FB76F87B2DA421C800FF7D43 /* pagina_resultados.swift in Sources */,
 				FB4B97AF2D946332007D5E9E /* comentario.swift in Sources */,
 				FB76F8742DA4219C00FF7D43 /* mono_chino.swift in Sources */,
@@ -298,6 +309,7 @@
 				FB76F87D2DA4237A00FF7D43 /* dragonball_api.swift in Sources */,
 				FB76F8802DA4263500FF7D43 /* PantallaPersonajes.swift in Sources */,
 				FB76F8842DA4378F00FF7D43 /* personaje.swift in Sources */,
+				FB39299E2DC51ED400A0E580 /* planetasGeneral.swift in Sources */,
 				FB76F8782DA421AF00FF7D43 /* transformaciones.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

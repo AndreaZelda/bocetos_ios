@@ -32,9 +32,8 @@ struct TransformacionVista: View {
                             .font(.largeTitle)
                             .bold()
                             .padding()
+                        
                     }
-                    
-                    
                 }
             }
         }

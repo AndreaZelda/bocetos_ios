@@ -63,6 +63,19 @@ public class ControladorAplicacion{
         
         self.pagina_resultados_planeta = pagina_descargada
     }
+    
+    func descargar_info_planetas(id: Int) async{
+        guard let planeta: Planeta = try? await DragonBallAPI().descargar_informacion_planeta(id: id) else {return}
+        
+        self.planetaNom = planeta
+    }
+    
+    func descargar_informacion_planeta(id: Int){
+        Task.detached(operation: {
+            await self.descargar_info_planetas
+        })
+    }
+    
     //PENDIENTE!!
 
     func descargar_publicaciones() async {

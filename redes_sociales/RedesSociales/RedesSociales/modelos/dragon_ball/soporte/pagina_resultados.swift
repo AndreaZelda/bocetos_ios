@@ -29,7 +29,7 @@ struct PaginaResultado: Codable{
 }
 
 struct PaginaResultadoPlaneta: Codable{
-    let items: [MonoChino]
+    let items: [Planeta]
     let meta: Meta
     let links: Enlaces
 }
