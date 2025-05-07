@@ -32,6 +32,8 @@ public class ControladorAplicacion{
             await self.descargar_publicaciones()
             
             await self.descargar_monos_chinos()
+            
+            await self.descargar_planetas()
         }
     }
     
@@ -72,7 +74,7 @@ public class ControladorAplicacion{
     
     func descargar_informacion_planeta(id: Int){
         Task.detached(operation: {
-            await self.descargar_info_planetas
+            await self.descargar_info_planetas(id: id)
         })
     }
     

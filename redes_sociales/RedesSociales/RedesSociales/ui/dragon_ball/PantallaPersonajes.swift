@@ -21,12 +21,14 @@ struct PantallaPersonajes: View{
                                 .padding()
                                 .font(.largeTitle)
                                 .bold()
+                                .foregroundColor(.white)
                         }
                         HStack{
                             Text("Personajes")
                                 .font(.title2)
                                 .bold()
                                 .padding(.bottom)
+                                .foregroundColor(.white)
                         }
                         ForEach(controlador.pagina_resultados!.items){ personaje in
                             NavigationLink {
@@ -55,12 +57,14 @@ struct PantallaPersonajes: View{
                             }))
                         }
                         .clipShape(RoundedRectangle(cornerRadius: 14))
-                        .background(Color.blue,in:RoundedRectangle(cornerRadius: 14))
+                        .background(Color.indigo,in:RoundedRectangle(cornerRadius: 14))
                         .foregroundColor(.white)
                         .padding()
+                        
                             
                     }
                 }
+                .background(Color.orange)
             }
         }
     }

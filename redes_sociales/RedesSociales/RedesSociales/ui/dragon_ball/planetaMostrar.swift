@@ -12,7 +12,6 @@ struct PlanetaVistaGen : View {
     @Environment(ControladorAplicacion.self) var controlador
     
     var body: some View {
-        if(controlador.pagina_resultados_planeta != nil){
             NavigationStack{
                 ScrollView{
                     Spacer()
@@ -59,15 +58,6 @@ struct PlanetaVistaGen : View {
                 }
             }
             .background(Color.indigo)
-        }
-        else {
-            Text("Descargando planetas")
-                .onAppear{
-                    Task {
-                        await controlador.descargar_planetas()
-                    }
-                }
-        }
     }
 }
 

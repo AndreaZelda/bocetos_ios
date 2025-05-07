@@ -52,21 +52,6 @@ struct PersonajeVista: View {
                             .simultaneousGesture(TapGesture().onEnded({
                                 //Pendiente conexion a los planetas
                             }))
-                        
-                        NavigationLink {
-                            TransformacionVista(personaje: personaje_falso)
-                        } label : {
-                            HStack{
-                                Text("Transformaciones")
-                            }
-                            .padding()
-                            .clipShape(RoundedRectangle(cornerRadius: 18))
-                            .background(Color.orange,in:RoundedRectangle(cornerRadius: 18))
-                            .foregroundColor(.white)
-                        }
-                        .simultaneousGesture(TapGesture().onEnded({
-                            //Pendiente conexion a los planetas
-                        }))
                     }
                     
                     Text("Planeta de origen: \(controlador.personaje?.originPlanet?.name ?? "Planetita")")
